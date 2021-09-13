@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 10px 10px 0px 0px white;
-  background-color: #fdfdfd;
+  background-color: #ffd200;
 }
 
 .tooltip-help{
@@ -63,6 +63,35 @@ select {
 .calculate-btn {
   background-color: #005daa;
   border-color: #005daa;
+}
+.table .thead-dark th{
+  background-color: #ffd200 !important;
+  color: #005daa;
+}
+.table {
+  background-color: #fdfdfd;
+  
+}
+
+.chart-container {
+  overflow-x: auto;
+  margin: 20px 0 40px 0px;
+}
+
+.diagram-heading {
+  color: #fdfdfd
+}
+
+.summary-heading{
+  color: #fdfdfd
+}
+
+.summary-payment-amount {
+  font-size: 20px;
+  color: #fdfdfd;
+}
+.summary-payment-amount span{
+  color: #fdfdfd;
 }
 
 @media (max-width: 480px) {

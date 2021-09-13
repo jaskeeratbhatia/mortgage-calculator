@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { validateInputs, hasErrors } from "../utilities/validate";
 import { Form } from "./Form";
 import { calculateMortage } from "../utilities/calculations";
-
+import { PaymentCharts } from "./PaymentCharts";
+import { SummaryTable } from "./SummaryTable";
 
 export const Dashboard = () => {
   const [mortgageAmt, setMortgageAmt] = useState(50000);
@@ -82,7 +83,6 @@ export const Dashboard = () => {
     }
   };
 
-  console.log("errors", errors);
   return (
     <div className="main-container">
       <Form
@@ -95,6 +95,12 @@ export const Dashboard = () => {
         handleSubmit={handleSubmit}
         errors={errors}
       />
+      {summaryTableData?.length > 0 && !hasErrors(errors) && (
+        <SummaryTable summaryTableData={summaryTableData} />
+      )}
+      {graphData?.length && !hasErrors(errors) && (
+        <PaymentCharts graphData={graphData} barData={barData} />
+      )}
     </div>
   );
 };
