@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployed App Link 
+
+https://jaskeeratbhatia.github.io/mortgage-calculator/
+
 ## App Screenshot
 
 ![Alt text](/public/screenshot.png?raw=true "App Screenshot")
